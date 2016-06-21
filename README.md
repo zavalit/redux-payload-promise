@@ -14,7 +14,7 @@ const store = createStore(
   [ 'some provided state' ],
   applyMiddleware(promiseMiddleware)
 );
-
+```
 
 and define an Action with object defined with a **payload** key, that refer to your async Promise.
 For example:
@@ -32,9 +32,7 @@ in case of a successful Response it will be dispatched with a JSON object like t
 
 {
   payload:"[object Promise]"
-  result: {
-    // your load data query result
-  }
+  result: // your load data query result string
   success:true
 }
 ```
